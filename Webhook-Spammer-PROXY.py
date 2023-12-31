@@ -43,7 +43,7 @@ def send_message_with_proxy(webhook_url, content, proxy):
 
 def send_messages_with_proxies(webhook_url, content, proxies, repetitions):
     threads = []
-    max_threads = 5
+    max_threads = 8
 
     for _ in range(repetitions):
         for proxy in proxies:
